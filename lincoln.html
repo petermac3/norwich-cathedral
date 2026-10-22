@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Lincoln Cathedral</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f1ea;
+            color: #2c2c2c;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 16px;
+        }
+
+        /* Mobile Portrait Card Container */
+        .mobile-card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Navigation Switcher */
+        .nav-bar {
+            display: flex;
+            background-color: #1e293b;
+            padding: 6px;
+            gap: 6px;
+        }
+
+        .nav-link {
+            flex: 1;
+            text-align: center;
+            padding: 10px 8px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: #cbd5e1;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.2s;
+        }
+
+        .nav-link.active {
+            background-color: #ffffff;
+            color: #0f172a;
+        }
+
+        /* Cathedral Image */
+        .hero-image {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+
+        /* Content Area */
+        .content {
+            padding: 24px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.65rem;
+            color: #1e293b;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        /* Opening Times Box */
+        .info-box {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 18px;
+            text-align: left;
+        }
+
+        .info-box h2 {
+            font-size: 1.05rem;
+            color: #0f172a;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+
+        .time-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.92rem;
+            padding: 6px 0;
+        }
+
+        .time-row span:first-child {
+            font-weight: 600;
+            color: #334155;
+        }
+
+        .time-row span:last-child {
+            color: #0f172a;
+        }
+
+        /* Visitor Instructions */
+        .instructions {
+            font-size: 0.88rem;
+            color: #475569;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            text-align: left;
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 12px;
+            border-radius: 6px;
+        }
+
+        /* Google Maps Button */
+        .maps-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            background-color: #1a73e8;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+            margin-bottom: 12px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .maps-btn:hover {
+            background-color: #1557b0;
+        }
+
+        .maps-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Secondary Page Link Button */
+        .switch-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #f1f5f9;
+            color: #334155;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 12px 16px;
+            border-radius: 12px;
+            border: 1px solid #cbd5e1;
+            transition: background-color 0.2s ease;
+        }
+
+        .switch-btn:hover {
+            background-color: #e2e8f0;
+        }
+
+        .address-footer {
+            margin-top: 14px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="mobile-card">
+        <!-- Top Switcher Bar -->
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-link">Norwich Cathedral</a>
+            <a href="lincoln.html" class="nav-link active">Lincoln Cathedral</a>
+        </nav>
+
+        <!-- Embedded Wikimedia Commons Image of Lincoln Cathedral West Front -->
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lincoln_Cathedral_West_Front_adjusted.JPG" 
+             alt="Lincoln Cathedral West Front" 
+             class="hero-image">
+
+        <div class="content">
+            <h1>Lincoln Cathedral</h1>
+            <p class="subtitle">Visitor Information &amp; Opening Times</p>
+
+            <section class="info-box">
+                <h2>🕒 Opening Times</h2>
+                <div class="time-row">
+                    <span>Sightseeing (Mon–Sat)</span>
+                    <span>10:00 am – 4:00 pm</span>
+                </div>
+                <div class="time-row">
+                    <span>Sightseeing (Sunday)</span>
+                    <span>11:45 am – 2:30 pm</span>
+                </div>
+                <div class="time-row">
+                    <span>Visitor Centre &amp; Café</span>
+                    <span>Mon–Sat 9–5 / Sun 10–4</span>
+                </div>
+                <div class="time-row">
+                    <span>Private Prayer &amp; Worship</span>
+                    <span>Open Daily (Free Entry)</span>
+                </div>
+            </section>
+
+            <div class="instructions">
+                <strong>Visitor Note:</strong> Sightseeing admission applies for adults (under-16s &amp; UK students with ID are free), which includes a guided floor tour and Exhibition Gallery access. Access for prayer and services is always free.
+            </div>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Lincoln+Cathedral+Minster+Yard+Lincoln+LN2+1PX" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="maps-btn">
+                📍 Open in Google Maps
+            </a>
+
+            <a href="index.html" class="switch-btn">
+                ← View Norwich Cathedral Guide
+            </a>
+
+            <p class="address-footer">Minster Yard, Lincoln, LN2 1PX</p>
+        </div>
+    </main>
+
+</body>
+</html>
